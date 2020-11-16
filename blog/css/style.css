@@ -1,0 +1,192 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /*
+
+        Spacing
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+/*General Setup*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: montserrat, sans-serif;
+  width:100%;
+
+}
+body {
+    margin: 1.5rem auto;
+
+    min-width:56.25rem;
+  }
+  /*Layout*/
+  main, article, aside {
+    float: left;
+  }
+  main {
+padding-left: 2rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    
+
+width: 75%;
+  }
+  .article-image {
+  float: left;
+  display: inline-block;
+  width: 100%
+  max-width: 25rem;
+  }
+  section {
+
+  }
+.main-section {
+
+  }
+.subsection {
+display: grid;
+grid-template-columns: 33% 33% 33%;
+grid-column-gap: 0.5rem;
+width: 75%;
+
+padding: 0;
+}
+aside {
+  display: flex;
+flex-direction: column;
+
+width: 25%;
+}
+figure {
+
+}
+figcaption {
+
+}
+/*Imported Typefaces*/
+@font-face {
+  font-family: montserrat;
+  font-style: normal;
+  font-weight: normal;
+  src:url(montserrat-regular.ttf);
+}
+@font-face {
+  font-family: josefinslab;
+  font-style: normal;
+  font-weight: normal;
+  src:url(josefinslab-regular.ttf);
+}
+  @font-face {
+    font-family:
+  }
+/*Typography Styles*/
+
+h1 {
+font-family: josefinslab, serif;
+font-size: 4rem;
+transform: rotate(-2deg);
+text-align: center;
+text-shadow: 1rem;
+letter-spacing: 0.125rem;
+
+}
+h2 {
+font-size: 1.125rem;
+word-spacing: 0.125rem;
+letter-spacing: 0.0625rem;
+}
+h3 {
+
+}
+p{
+float:left;
+
+}
+figcaption {
+
+}
+/*Link Styling*/
+nav {
+  padding-left: 0;
+  margin-top: 0.25rem;
+
+}
+/*Navigation Bar*/
+nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000080;
+  line-height: 3;
+  padding: 2.5rem;
+}
+nav a:focus,
+nav a:hover {
+text-decoration: none;
+
+}
+nav a:active {
+  text-decoration: line-through;
+  color: #000000;
+
+}
+
+
+
+/*Footer*/
+footer {
+
+}
+.highlight {
+  font-family: monteserrat;
+color:#EEE4D1;
+background-color:#853333;
+padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+border-top-left-radius: 0.75rem;
+border-bottom-right-radius: 0.75rem;
+}
