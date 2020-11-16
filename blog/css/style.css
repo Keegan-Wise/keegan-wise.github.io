@@ -1,6 +1,5 @@
 /* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
-
-        /*
+/*
 
         Spacing
 
@@ -44,119 +43,125 @@
             - @font-face or @import (to import typefaces)
 
         */
-
-
 /* ------ START WRITING YOUR CODE BELOW ------ */
 /*General Setup*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   font-family: montserrat, sans-serif;
-  width:100%;
-
+  width: 100%;
+  margin: auto;
 }
+
 body {
-    margin: 1.5rem auto;
-
-    min-width:56.25rem;
-  }
-  /*Layout*/
-  main, article, aside {
-    float: left;
-  }
-  main {
-padding-left: 2rem;
-  }
-
-  article {
-    display: flex;
-    flex-direction: column;
-    
-
-width: 75%;
-  }
-  .article-image {
-  float: left;
-  display: inline-block;
-  width: 100%
-  max-width: 25rem;
-  }
-  section {
-
-  }
-.main-section {
-
-  }
-.subsection {
-display: grid;
-grid-template-columns: 33% 33% 33%;
-grid-column-gap: 0.5rem;
-width: 75%;
-
-padding: 0;
+margin: auto;
+padding: 2rem;
 }
+
+/*Layout*/
+main {
+}
+
+article {
+  margin-right: 2rem;
+}
+
+.article-image {
+  float: left;
+  width: 100%;
+  max-width: 25rem;
+}
+
+section {}
+
+.main-section {
+  display: flex;
+  width: 75%;
+}
+
+.subsection {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+grid-column-gap: 2.5rem;
+align-items: center;
+  clear: left;
+
+}
+
 aside {
   display: flex;
-flex-direction: column;
-
-width: 25%;
-}
-figure {
-
-}
-figcaption {
+  flex-direction: column;
+  width: 25%;
+  padding: 0 2rem 2rem 2rem ;
+  border-left-style: solid;
 
 }
+
+figure {}
+
+figcaption {}
+
 /*Imported Typefaces*/
 @font-face {
   font-family: montserrat;
   font-style: normal;
   font-weight: normal;
-  src:url(montserrat-regular.ttf);
+  src: url(montserrat-regular.ttf);
 }
+
 @font-face {
   font-family: josefinslab;
   font-style: normal;
   font-weight: normal;
-  src:url(josefinslab-regular.ttf);
+  src: url(josefinslab-regular.ttf);
 }
-  @font-face {
-    font-family:
-  }
+
+@font-face {
+  font-family:
+}
+
 /*Typography Styles*/
-
 h1 {
-font-family: josefinslab, serif;
-font-size: 4rem;
-transform: rotate(-2deg);
-text-align: center;
-text-shadow: 1rem;
-letter-spacing: 0.125rem;
-
+  font-family: josefinslab, serif;
+  font-size: 4rem;
+  transform: rotate(-2deg);
+  text-align: center;
+  text-shadow: 1rem;
+  letter-spacing: 0.125rem;
 }
+
 h2 {
-font-size: 1.125rem;
-word-spacing: 0.125rem;
-letter-spacing: 0.0625rem;
+  font-size: 1.5rem;
+  word-spacing: 0.125rem;
+  letter-spacing: 0.0625rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.125rem;
 }
-h3 {
 
-}
-p{
-float:left;
+h3 {}
 
+p {
+  letter-spacing: 0.0625rem;
+  line-height: 1rem;
 }
+
 figcaption {
-
+  background-color: #EEE4D1;
+  text-align: left;
 }
+
 /*Link Styling*/
 nav {
   padding-left: 0;
   margin-top: 0.25rem;
-
+  border-top-style: solid;
+  border-bottom-style: solid;
+  width:100%;
 }
+
 /*Navigation Bar*/
 nav a {
   font-size: 1.5rem;
@@ -165,28 +170,43 @@ nav a {
   line-height: 3;
   padding: 2.5rem;
 }
+
 nav a:focus,
 nav a:hover {
-text-decoration: none;
-
+  text-decoration: none;
 }
+
 nav a:active {
   text-decoration: line-through;
   color: #000000;
-
 }
-
-
 
 /*Footer*/
 footer {
-
+display: flex;
+text-align: left;
 }
+
+
 .highlight {
   font-family: monteserrat;
-color:#EEE4D1;
-background-color:#853333;
-padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-border-top-left-radius: 0.75rem;
-border-bottom-right-radius: 0.75rem;
+  color: #EEE4D1;
+  background-color: #853333;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-top-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.image-aside {
+  width:15rem;
+  height: 20rem;
+}
+button {
+  font-family: monteserrat;
+  font-size: 2rem;
+  font-weight:bold;
+    background-color: #000080;
+    color: #EEE4D1;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    letter-spacing: 0.125rem;
 }
