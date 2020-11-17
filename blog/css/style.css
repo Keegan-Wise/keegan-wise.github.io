@@ -95,8 +95,8 @@ section {}
   grid-column-gap: 1rem;
 
 
-  margin-left: 1rem;
   clear: left;
+
 }
 
 aside {
@@ -110,7 +110,9 @@ aside {
 }
 
 figure {
-  width: 95%;
+  width: 100%;
+  margin-inline-start: 1rem;
+  margin-inline-end: 13rem;
 }
 
 figcaption {}
@@ -150,7 +152,7 @@ h2 {
   letter-spacing: 0.0625rem;
   padding-top: 2rem;
   padding-bottom: 0.125rem;
-  margin-left: auto;
+  margin-left: 1rem;
 }
 
 h3 {
